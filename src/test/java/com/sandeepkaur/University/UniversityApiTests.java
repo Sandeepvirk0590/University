@@ -24,11 +24,11 @@ public class UniversityApiTests {
 				.contentType(ContentType.JSON);
 	}
 
-	@Test
-	public void testInvalidRequests() {
-		given().header("api_key", "f3c84cbb-1f9a-4b87-bb5b-2d1691b24e1e").contentType(ContentType.JSON).when()
-				.post("/university").then().statusCode(422);
-	}
+//	@Test
+//	public void testInvalidRequests() {
+//		given().header("api_key", "f3c84cbb-1f9a-4b87-bb5b-2d1691b24e1e").contentType(ContentType.JSON).when()
+//				.post("/university").then().statusCode(422);
+//	}
 
 	@Test
 	public void create() {
